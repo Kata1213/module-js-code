@@ -29,6 +29,12 @@ node实现了并使用了commonJS标准，所以commonJS的模块导出和导入
  ```bash
   npm install -D webpack webpack-cli
   webpack ./src/commonjs/index.js --output-path ./src/commonjs/ --output-filename bundle.js
+
+ 这里有问题，直接用webpack可能无法发现webpack command，
+ 所以可以加上webpack的路径：
+ ./node_modules/.bin/webpack ./src/commonjs/index.js --output-path ./src/commonjs/ --output-filename bundle.js
+
+
  ```
 2. [browserify](http://browserify.org/)
  ```bash
