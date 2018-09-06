@@ -1,4 +1,4 @@
-import printer from "./printToConsole.js";
+import printer from "./printToConsole";
 
 const renderTemplate = (template, model) =>
   printer(Object.keys(model)
