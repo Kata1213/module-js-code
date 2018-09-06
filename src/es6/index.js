@@ -1,3 +1,3 @@
-import renderTemplate from "./renderTemplate";
+import renderTemplate from "./renderTemplate.js";
 
-render('I am ${firstName},${lastName}', {firstName: 'TW', lastName: 'er'});
+renderTemplate('I am ${firstName},${lastName}', {firstName: 'TW', lastName: 'er'});
